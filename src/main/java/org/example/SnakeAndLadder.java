@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 
-public class SnakeandLadder
+public class SnakeAndLadder
 {
     public static void main(String[] args) {
         List<String> propsBoard = new ArrayList<>();
