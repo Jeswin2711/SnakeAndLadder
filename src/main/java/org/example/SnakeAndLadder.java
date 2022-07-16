@@ -100,9 +100,9 @@ public class SnakeAndLadder
         System.out.println(playerNo);
         while (true)
         {
-            String checkBoard = propsBoard.get(random.nextInt(propsBoard.size()));
+            int turnResult = (int) Math.floor(Math.random() * 3) + 1;
             int random_int = (int) Math.floor(Math.random() * 6) + 1;
-            if (checkBoard.equals("SNAKE"))
+            if (turnResult == 0)
             {
                 if(playerNo.equals("Player1")) {
                     System.out.println("---- Player One Turn ----");
@@ -118,7 +118,7 @@ public class SnakeAndLadder
                     playerNo = "Player1";
                 }
             }
-            else if (checkBoard.equals("LADDER"))
+            else if (turnResult == 1)
             {
                 String againCheck = propsBoard.get(random.nextInt(propsBoard.size()));
                 if(playerNo.equals("Player1"))
